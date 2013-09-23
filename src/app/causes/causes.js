@@ -12,9 +12,8 @@
  * The dependencies block here is also where component dependencies should be
  * specified, as shown below.
  */
-angular.module( 'ngBoilerplate.main', [
+angular.module( 'causeAndEffect.causes', [
   'ui.state',
-  'titleService',
   'plusOne'
 ])
 
@@ -24,22 +23,22 @@ angular.module( 'ngBoilerplate.main', [
  * this way makes each module more "self-contained".
  */
 .config(function config( $stateProvider ) {
-  $stateProvider.state( 'main', {
-    url: '/main',
+  $stateProvider.state( 'causes', {
+    url: '/causes',
     views: {
       "main": {
-        controller: 'MainCtrl',
-        templateUrl: 'main/main.tpl.html'
+        controller: 'CausesCtrl',
+        templateUrl: 'causes/causes.tpl.html'
       }
-    }
+    },
+    data:{ pageTitle: 'Causes' }
   });
 })
 
 /**
  * And of course we define a controller for our route.
  */
-.controller( 'MainCtrl', function MainController( $scope, titleService ) {
-  titleService.setTitle( 'Main' );
+.controller( 'CausesCtrl', function CausesCtrl( $scope ) {
 })
 
 ;

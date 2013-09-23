@@ -4,8 +4,8 @@
  * build process will exclude all `.spec.js` files from the build
  * automatically.
  */
-describe( 'main section', function() {
-  beforeEach( module( 'ngBoilerplate.main' ) );
+describe( 'causes section', function() {
+  beforeEach( module( 'causeAndEffect.causes' ) );
 
   it( 'should have a dummy test', inject( function() {
     expect( true ).toBeTruthy();

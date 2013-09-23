@@ -6,19 +6,19 @@
 src/
   |- app/
   |  |- home/
-  |  |  |- home.js
+  |  |  |- causes.js
   |  |  |- home.less
-  |  |  |- home.spec.js
+  |  |  |- causes.spec.js
   |  |  |- home.tpl.html
 ```
 
-- `home.js` - defines the module.
+- `causes.js` - defines the module.
 - `home.less` - module-specific styles; this file is imported into
   `src/less/main.less` manually by the developer.
-- `home.spec.js` - module unit tests.
+- `causes.spec.js` - module unit tests.
 - `home.tpl.html` - the route template.
 
-## `home.js`
+## `causes.js`
 
 This boilerplate is too simple to demonstrate it, but `src/app/home` could have
 several sub-folders representing additional modules that would then be listed
