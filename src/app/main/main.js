@@ -12,7 +12,7 @@
  * The dependencies block here is also where component dependencies should be
  * specified, as shown below.
  */
-angular.module( 'causeandeffect.main', [
+angular.module( 'causeAndEffect.main', [
   'ui.state',
   'titleService',
   'plusOne'
