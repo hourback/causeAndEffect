@@ -5,7 +5,8 @@ angular.module( 'causeAndEffect', [
   'ngBoilerplate.about',
   'ui.state',
   'ui.route',
-  'causeAndEffect.causes'
+  'causeAndEffect.causes',
+  'causeAndEffect.cause'
 ])
 
 .config( function myAppConfig ( $stateProvider, $urlRouterProvider ) {
