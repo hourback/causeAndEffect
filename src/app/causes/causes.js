@@ -39,6 +39,8 @@ angular.module( 'causeAndEffect.causes', [
  * And of course we define a controller for our route.
  */
 .controller( 'CausesCtrl', function CausesCtrl( $scope ) {
+    $scope.blah = 'blah text';
+
 })
 
 ;
